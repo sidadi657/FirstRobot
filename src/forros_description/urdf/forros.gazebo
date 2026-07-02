@@ -1,0 +1,132 @@
+<?xml version="1.0" ?>
+<robot name="forros" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+
+<xacro:property name="body_color" value="Gazebo/Silver" />
+
+<gazebo reference="base_link">
+  <material>${body_color}</material>
+  <mu1>0.2</mu1>
+  <mu2>0.2</mu2>
+  <self_collide>true</self_collide>
+  <gravity>true</gravity>
+</gazebo>
+
+<gazebo reference="right_mid_wheel_1">
+  <material>${body_color}</material>
+  <mu1>1.5</mu1>
+  <mu2>1.5</mu2>
+  <self_collide>true</self_collide>
+</gazebo>
+
+<gazebo reference="left_mid_wheel_1">
+  <material>${body_color}</material>
+  <mu1>1.5</mu1>
+  <mu2>1.5</mu2>
+  <self_collide>true</self_collide>
+</gazebo>
+
+<gazebo reference="BogieArm_left_1">
+  <material>${body_color}</material>
+  <mu1>0.2</mu1>
+  <mu2>0.2</mu2>
+  <self_collide>true</self_collide>
+</gazebo>
+
+<gazebo reference="motor_house_left_mid_1">
+  <material>${body_color}</material>
+  <mu1>0.2</mu1>
+  <mu2>0.2</mu2>
+  <self_collide>true</self_collide>
+</gazebo>
+
+<gazebo reference="BogieArm_right_1">
+  <material>${body_color}</material>
+  <mu1>0.2</mu1>
+  <mu2>0.2</mu2>
+  <self_collide>true</self_collide>
+</gazebo>
+
+<gazebo reference="right_back_wheel_1">
+  <material>${body_color}</material>
+  <mu1>1.5</mu1>
+  <mu2>1.5</mu2>
+  <self_collide>true</self_collide>
+</gazebo>
+
+<gazebo reference="right_front_wheel_1">
+  <material>${body_color}</material>
+  <mu1>1.5</mu1>
+  <mu2>1.5</mu2>
+  <self_collide>true</self_collide>
+</gazebo>
+
+<gazebo reference="left_back_wheel_1">
+  <material>${body_color}</material>
+  <mu1>1.5</mu1>
+  <mu2>1.5</mu2>
+  <self_collide>true</self_collide>
+</gazebo>
+
+<gazebo reference="left_front_wheel_1">
+  <material>${body_color}</material>
+  <mu1>1.5</mu1>
+  <mu2>1.5</mu2>
+  <self_collide>true</self_collide>
+</gazebo>
+
+<gazebo reference="motor_house_right_mid_1">
+  <material>${body_color}</material>
+  <mu1>0.2</mu1>
+  <mu2>0.2</mu2>
+  <self_collide>true</self_collide>
+</gazebo>
+
+<gazebo reference="motor_house_left_front_1">
+  <material>${body_color}</material>
+  <mu1>0.2</mu1>
+  <mu2>0.2</mu2>
+  <self_collide>true</self_collide>
+</gazebo>
+
+<gazebo reference="motor_house_right_front_1">
+  <material>${body_color}</material>
+  <mu1>0.2</mu1>
+  <mu2>0.2</mu2>
+  <self_collide>true</self_collide>
+</gazebo>
+
+<gazebo reference="motor_house_right_back_2">
+  <material>${body_color}</material>
+  <mu1>0.2</mu1>
+  <mu2>0.2</mu2>
+  <self_collide>true</self_collide>
+</gazebo>
+
+<gazebo reference="motor_house_left_back_1">
+  <material>${body_color}</material>
+  <mu1>0.2</mu1>
+  <mu2>0.2</mu2>
+  <self_collide>true</self_collide>
+</gazebo>
+
+<gazebo reference="RockerArm_left_1">
+  <material>${body_color}</material>
+  <mu1>0.2</mu1>
+  <mu2>0.2</mu2>
+  <self_collide>true</self_collide>
+</gazebo>
+
+<gazebo reference="RockerArm_right_1">
+  <material>${body_color}</material>
+  <mu1>0.2</mu1>
+  <mu2>0.2</mu2>
+  <self_collide>true</self_collide>
+</gazebo>
+
+<gazebo>
+  <plugin filename="gz_ros2_control-system" name="gz_ros2_control::GazeboSimROS2ControlPlugin">
+    <parameters>$(find forros_description)/config/ros2_controllers.yaml</parameters>
+  </plugin>
+</gazebo>
+
+</robot>

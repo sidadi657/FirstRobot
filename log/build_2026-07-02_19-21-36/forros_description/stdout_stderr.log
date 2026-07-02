@@ -1,0 +1,54 @@
+/usr/lib/python3/dist-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'
+  warnings.warn(msg)
+running develop
+running egg_info
+creating forros_description.egg-info
+writing forros_description.egg-info/PKG-INFO
+writing dependency_links to forros_description.egg-info/dependency_links.txt
+writing requirements to forros_description.egg-info/requires.txt
+writing top-level names to forros_description.egg-info/top_level.txt
+writing manifest file 'forros_description.egg-info/SOURCES.txt'
+reading manifest file 'forros_description.egg-info/SOURCES.txt'
+writing manifest file 'forros_description.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/sidadi/Documents/rover_ws/install/forros_description/lib/python3.14/site-packages/forros-description.egg-link (link to .)
+
+Installed /home/sidadi/Documents/rover_ws/build/forros_description
+running symlink_data
+creating /home/sidadi/Documents/rover_ws/install/forros_description/share/ament_index/resource_index/packages
+symbolically linking /home/sidadi/Documents/rover_ws/build/forros_description/resource/forros_description -> /home/sidadi/Documents/rover_ws/install/forros_description/share/ament_index/resource_index/packages
+symbolically linking /home/sidadi/Documents/rover_ws/build/forros_description/package.xml -> /home/sidadi/Documents/rover_ws/install/forros_description/share/forros_description
+creating /home/sidadi/Documents/rover_ws/install/forros_description/share/forros_description/launch
+symbolically linking /home/sidadi/Documents/rover_ws/build/forros_description/launch/gazebo.launch.py -> /home/sidadi/Documents/rover_ws/install/forros_description/share/forros_description/launch
+symbolically linking /home/sidadi/Documents/rover_ws/build/forros_description/launch/sim.launch.py -> /home/sidadi/Documents/rover_ws/install/forros_description/share/forros_description/launch
+symbolically linking /home/sidadi/Documents/rover_ws/build/forros_description/launch/display.launch.py -> /home/sidadi/Documents/rover_ws/install/forros_description/share/forros_description/launch
+creating /home/sidadi/Documents/rover_ws/install/forros_description/share/forros_description/urdf
+symbolically linking /home/sidadi/Documents/rover_ws/build/forros_description/urdf/materials.xacro -> /home/sidadi/Documents/rover_ws/install/forros_description/share/forros_description/urdf
+symbolically linking /home/sidadi/Documents/rover_ws/build/forros_description/urdf/forros.xacro -> /home/sidadi/Documents/rover_ws/install/forros_description/share/forros_description/urdf
+symbolically linking /home/sidadi/Documents/rover_ws/build/forros_description/urdf/forros.gazebo -> /home/sidadi/Documents/rover_ws/install/forros_description/share/forros_description/urdf
+symbolically linking /home/sidadi/Documents/rover_ws/build/forros_description/urdf/forros.ros2control -> /home/sidadi/Documents/rover_ws/install/forros_description/share/forros_description/urdf
+creating /home/sidadi/Documents/rover_ws/install/forros_description/share/forros_description/meshes
+symbolically linking /home/sidadi/Documents/rover_ws/build/forros_description/meshes/base_link.stl -> /home/sidadi/Documents/rover_ws/install/forros_description/share/forros_description/meshes
+symbolically linking /home/sidadi/Documents/rover_ws/build/forros_description/meshes/motor_house_left_back_1.stl -> /home/sidadi/Documents/rover_ws/install/forros_description/share/forros_description/meshes
+symbolically linking /home/sidadi/Documents/rover_ws/build/forros_description/meshes/motor_house_left_front_1.stl -> /home/sidadi/Documents/rover_ws/install/forros_description/share/forros_description/meshes
+symbolically linking /home/sidadi/Documents/rover_ws/build/forros_description/meshes/right_front_wheel_1.stl -> /home/sidadi/Documents/rover_ws/install/forros_description/share/forros_description/meshes
+symbolically linking /home/sidadi/Documents/rover_ws/build/forros_description/meshes/motor_house_right_back_2.stl -> /home/sidadi/Documents/rover_ws/install/forros_description/share/forros_description/meshes
+symbolically linking /home/sidadi/Documents/rover_ws/build/forros_description/meshes/left_back_wheel_1.stl -> /home/sidadi/Documents/rover_ws/install/forros_description/share/forros_description/meshes
+symbolically linking /home/sidadi/Documents/rover_ws/build/forros_description/meshes/RockerArm_right_1.stl -> /home/sidadi/Documents/rover_ws/install/forros_description/share/forros_description/meshes
+symbolically linking /home/sidadi/Documents/rover_ws/build/forros_description/meshes/world.obj -> /home/sidadi/Documents/rover_ws/install/forros_description/share/forros_description/meshes
+symbolically linking /home/sidadi/Documents/rover_ws/build/forros_description/meshes/right_mid_wheel_1.stl -> /home/sidadi/Documents/rover_ws/install/forros_description/share/forros_description/meshes
+symbolically linking /home/sidadi/Documents/rover_ws/build/forros_description/meshes/right_back_wheel_1.stl -> /home/sidadi/Documents/rover_ws/install/forros_description/share/forros_description/meshes
+symbolically linking /home/sidadi/Documents/rover_ws/build/forros_description/meshes/world.stl -> /home/sidadi/Documents/rover_ws/install/forros_description/share/forros_description/meshes
+symbolically linking /home/sidadi/Documents/rover_ws/build/forros_description/meshes/motor_house_left_mid_1.stl -> /home/sidadi/Documents/rover_ws/install/forros_description/share/forros_description/meshes
+symbolically linking /home/sidadi/Documents/rover_ws/build/forros_description/meshes/RockerArm_left_1.stl -> /home/sidadi/Documents/rover_ws/install/forros_description/share/forros_description/meshes
+symbolically linking /home/sidadi/Documents/rover_ws/build/forros_description/meshes/world.mtl -> /home/sidadi/Documents/rover_ws/install/forros_description/share/forros_description/meshes
+symbolically linking /home/sidadi/Documents/rover_ws/build/forros_description/meshes/left_mid_wheel_1.stl -> /home/sidadi/Documents/rover_ws/install/forros_description/share/forros_description/meshes
+symbolically linking /home/sidadi/Documents/rover_ws/build/forros_description/meshes/motor_house_right_mid_1.stl -> /home/sidadi/Documents/rover_ws/install/forros_description/share/forros_description/meshes
+symbolically linking /home/sidadi/Documents/rover_ws/build/forros_description/meshes/BogieArm_right_1.stl -> /home/sidadi/Documents/rover_ws/install/forros_description/share/forros_description/meshes
+symbolically linking /home/sidadi/Documents/rover_ws/build/forros_description/meshes/left_front_wheel_1.stl -> /home/sidadi/Documents/rover_ws/install/forros_description/share/forros_description/meshes
+symbolically linking /home/sidadi/Documents/rover_ws/build/forros_description/meshes/motor_house_right_front_1.stl -> /home/sidadi/Documents/rover_ws/install/forros_description/share/forros_description/meshes
+symbolically linking /home/sidadi/Documents/rover_ws/build/forros_description/meshes/BogieArm_left_1.stl -> /home/sidadi/Documents/rover_ws/install/forros_description/share/forros_description/meshes
+creating /home/sidadi/Documents/rover_ws/install/forros_description/share/forros_description/config
+symbolically linking /home/sidadi/Documents/rover_ws/build/forros_description/config/ros2_controllers.yaml -> /home/sidadi/Documents/rover_ws/install/forros_description/share/forros_description/config
+creating /home/sidadi/Documents/rover_ws/install/forros_description/share/forros_description/worlds
+symbolically linking /home/sidadi/Documents/rover_ws/build/forros_description/worlds/my_world.sdf -> /home/sidadi/Documents/rover_ws/install/forros_description/share/forros_description/worlds

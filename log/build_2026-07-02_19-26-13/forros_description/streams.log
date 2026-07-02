@@ -1,0 +1,17 @@
+[0.481s] Invoking command in '/home/sidadi/Documents/rover_ws/build/forros_description': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/sidadi/Documents/rover_ws/build/forros_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sidadi/Documents/rover_ws/install/forros_description/lib/python3.14/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sidadi/Documents/rover_ws/build/forros_description/build --no-deps symlink_data
+[0.591s] /usr/lib/python3/dist-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'
+[0.591s]   warnings.warn(msg)
+[0.673s] running develop
+[0.773s] running egg_info
+[0.783s] writing forros_description.egg-info/PKG-INFO
+[0.783s] writing dependency_links to forros_description.egg-info/dependency_links.txt
+[0.784s] writing requirements to forros_description.egg-info/requires.txt
+[0.784s] writing top-level names to forros_description.egg-info/top_level.txt
+[0.807s] reading manifest file 'forros_description.egg-info/SOURCES.txt'
+[0.808s] writing manifest file 'forros_description.egg-info/SOURCES.txt'
+[0.819s] running build_ext
+[0.819s] Creating /home/sidadi/Documents/rover_ws/install/forros_description/lib/python3.14/site-packages/forros-description.egg-link (link to .)
+[0.820s] 
+[0.820s] Installed /home/sidadi/Documents/rover_ws/build/forros_description
+[0.820s] running symlink_data
+[0.845s] Invoked command in '/home/sidadi/Documents/rover_ws/build/forros_description' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/sidadi/Documents/rover_ws/build/forros_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sidadi/Documents/rover_ws/install/forros_description/lib/python3.14/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sidadi/Documents/rover_ws/build/forros_description/build --no-deps symlink_data

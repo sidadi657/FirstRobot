@@ -1,0 +1,35 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 100  # Hz
+    use_sim_time: true
+    # This publishes the joint angles to RViz
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    rover_velocity_controller:
+      type: forward_command_controller/ForwardCommandController
+
+    # This is the actual controller for your servos
+    steering_controller:
+      type: forward_command_controller/ForwardCommandController
+
+
+rover_velocity_controller:
+  ros__parameters:
+    joints:
+      - left_back_wheel
+      - left_front_wheel
+      - right_back_wheel
+      - right_front_wheel
+      - left_mid_wheel
+      - right_mid_wheel
+    interface_name: velocity
+
+steering_controller:
+  ros__parameters:
+    joints:
+      - motor_house_left_front
+      - motor_house_right_front
+      - motor_house_left_back
+      - motor_house_right_back
+    interface_name: position
