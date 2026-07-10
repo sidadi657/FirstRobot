@@ -2,11 +2,8 @@ package.xml
 setup.cfg
 setup.py
 config/ros2_controllers.yaml
-config/traversability_params.yaml
 forros_description/__init__.py
 forros_description/cmd_vel_to_rover.py
-forros_description/scan_filter.py
-forros_description/traversability_check.py
 forros_description.egg-info/PKG-INFO
 forros_description.egg-info/SOURCES.txt
 forros_description.egg-info/dependency_links.txt
