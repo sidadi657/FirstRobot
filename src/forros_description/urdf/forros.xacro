@@ -477,7 +477,7 @@
   <child link="RockerArm_left_1"/>
   <axis xyz="0.0 -1.0 0.0"/>
   <limit upper="0.349066" lower="-0.349066" effort="100" velocity="100"/>
-  <dynamics damping="0.1" friction="0.5"/>
+  <dynamics damping="2" friction="0.5"/>
 </joint>
 
 <joint name="right_rocker_arm" type="revolute">
@@ -486,7 +486,7 @@
   <child link="RockerArm_right_1"/>
   <axis xyz="0.0 1.0 0.0"/>
   <limit upper="0.349066" lower="-0.349066" effort="100" velocity="100"/>
-  <dynamics damping="0.1" friction="0.5"/>
+  <dynamics damping="2" friction="0.5"/>
   <mimic joint="left_rocker_arm" multiplier="1" offset="0"/>
 </joint>
 
@@ -514,5 +514,28 @@
   <child link="lidar_link"/>
 </joint>
 
+<link name="camera_link">
+  <inertial>
+    <mass value="0.072"/>
+    <inertia ixx="1e-5" iyy="1e-5" izz="1e-5" ixy="0" iyz="0" ixz="0"/>
+  </inertial>
+  <visual>
+    <geometry>
+      <box size="0.025 0.09 0.025"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <geometry>
+      <box size="0.025 0.09 0.025"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="camera_joint" type="fixed">
+  <origin xyz="-0.04 0.115 0.12" rpy="3.14159 -3.14159 0"/>
+  <parent link="base_link"/>
+  <child link="camera_link"/>
+</joint>
 
 </robot>

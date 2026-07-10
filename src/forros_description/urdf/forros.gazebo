@@ -165,6 +165,25 @@
     </sensor>
   </gazebo>
 
+  <gazebo reference="camera_link">
+  <sensor name="rgbd_camera" type="rgbd_camera">
+    <pose>0 0 0 0 0 0</pose>
+    <topic>camera</topic>
+    <update_rate>15</update_rate>
+    <frame_id>camera_link</frame_id>
+    <camera>
+      <horizontal_fov>1.5009</horizontal_fov>
+      <image>
+        <width>640</width>
+        <height>480</height>
+      </image>
+      <clip>
+        <near>0.1</near>
+        <far>10.0</far>
+      </clip>
+    </camera>
+  </sensor>
+</gazebo>
 
   <gazebo>
     <plugin filename="gz_ros2_control-system" name="gz_ros2_control::GazeboSimROS2ControlPlugin">
