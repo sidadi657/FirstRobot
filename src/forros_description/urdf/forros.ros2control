@@ -71,6 +71,18 @@
       <state_interface name="position" />
     </joint>
 
+    <joint name="left_rocker_arm">
+      <state_interface name="position" />
+    </joint>
+    <joint name="right_rocker_arm">
+      <state_interface name="position" />
+    </joint>
+    <joint name="left_rocker_bogie">  <!-- use your actual joint name -->
+      <state_interface name="position" />
+    </joint>
+    <joint name="right_rocker_bogie">  <!-- use your actual joint name -->
+      <state_interface name="position" />
+    </joint>
 
   </ros2_control>
 </robot>

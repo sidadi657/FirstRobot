@@ -1,0 +1,23 @@
+digraph G {
+"motor_house_left_back_1" -> "left_back_wheel_1"[label=" Broadcaster: default_authority\nAverage rate: 20.606\nBuffer length: 1.65\nMost recent transform: 25.92\nOldest transform: 24.27\n"];
+"RockerArm_left_1" -> "motor_house_left_back_1"[label=" Broadcaster: default_authority\nAverage rate: 20.606\nBuffer length: 1.65\nMost recent transform: 25.92\nOldest transform: 24.27\n"];
+"motor_house_left_front_1" -> "left_front_wheel_1"[label=" Broadcaster: default_authority\nAverage rate: 20.606\nBuffer length: 1.65\nMost recent transform: 25.92\nOldest transform: 24.27\n"];
+"BogieArm_left_1" -> "motor_house_left_front_1"[label=" Broadcaster: default_authority\nAverage rate: 20.606\nBuffer length: 1.65\nMost recent transform: 25.92\nOldest transform: 24.27\n"];
+"motor_house_left_mid_1" -> "left_mid_wheel_1"[label=" Broadcaster: default_authority\nAverage rate: 20.606\nBuffer length: 1.65\nMost recent transform: 25.92\nOldest transform: 24.27\n"];
+"BogieArm_left_1" -> "motor_house_left_mid_1"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"base_link" -> "RockerArm_left_1"[label=" Broadcaster: default_authority\nAverage rate: 20.606\nBuffer length: 1.65\nMost recent transform: 25.92\nOldest transform: 24.27\n"];
+"RockerArm_left_1" -> "BogieArm_left_1"[label=" Broadcaster: default_authority\nAverage rate: 20.606\nBuffer length: 1.65\nMost recent transform: 25.92\nOldest transform: 24.27\n"];
+"RockerArm_right_1" -> "motor_house_right_back_2"[label=" Broadcaster: default_authority\nAverage rate: 20.606\nBuffer length: 1.65\nMost recent transform: 25.92\nOldest transform: 24.27\n"];
+"base_link" -> "RockerArm_right_1"[label=" Broadcaster: default_authority\nAverage rate: 20.606\nBuffer length: 1.65\nMost recent transform: 25.92\nOldest transform: 24.27\n"];
+"BogieArm_right_1" -> "motor_house_right_front_1"[label=" Broadcaster: default_authority\nAverage rate: 20.606\nBuffer length: 1.65\nMost recent transform: 25.92\nOldest transform: 24.27\n"];
+"RockerArm_right_1" -> "BogieArm_right_1"[label=" Broadcaster: default_authority\nAverage rate: 20.606\nBuffer length: 1.65\nMost recent transform: 25.92\nOldest transform: 24.27\n"];
+"motor_house_right_back_2" -> "right_back_wheel_1"[label=" Broadcaster: default_authority\nAverage rate: 20.606\nBuffer length: 1.65\nMost recent transform: 25.92\nOldest transform: 24.27\n"];
+"motor_house_right_front_1" -> "right_front_wheel_1"[label=" Broadcaster: default_authority\nAverage rate: 20.606\nBuffer length: 1.65\nMost recent transform: 25.92\nOldest transform: 24.27\n"];
+"motor_house_right_mid_1" -> "right_mid_wheel_1"[label=" Broadcaster: default_authority\nAverage rate: 20.606\nBuffer length: 1.65\nMost recent transform: 25.92\nOldest transform: 24.27\n"];
+"BogieArm_right_1" -> "motor_house_right_mid_1"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"base_link" -> "lidar_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1783446024.5481772"[ shape=plaintext ] ;
+}->"base_link";
+}

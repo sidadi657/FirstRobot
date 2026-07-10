@@ -7,8 +7,8 @@
 <link name="base_link">
   <inertial>
     <origin xyz="0.1099999999999859 0.115 0.12499999999999567" rpy="0 0 0"/>
-    <mass value="42.38938346244173"/>
-    <inertia ixx="0.169907" iyy="0.346538" izz="0.459219" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+    <mass value="4.238938346244173"/>
+    <inertia ixx="0.0169907" iyy="0.0346538" izz="0.0459219" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
   </inertial>
   <visual>
     <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -28,8 +28,8 @@
 <link name="right_mid_wheel_1">
   <inertial>
     <origin xyz="1.0320994585366616e-07 0.02500000022351742 4.163336342344337e-17" rpy="0 0 0"/>
-    <mass value="3.313045200437847"/>
-    <inertia ixx="0.002916" iyy="0.004451" izz="0.002916" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+    <mass value="0.3313045200437847"/>
+    <inertia ixx="0.0002916" iyy="0.0004451" izz="0.0002916" ixy="0.0" iyz="0.0" ixz="-0.0"/>
   </inertial>
   <visual>
     <origin xyz="-0.069447 -0.2451 0.04945" rpy="0 0 0"/>
@@ -49,8 +49,8 @@
 <link name="left_mid_wheel_1">
   <inertial>
     <origin xyz="1.0320994585366616e-07 -0.025000000223517366 9.71445146547012e-17" rpy="0 0 0"/>
-    <mass value="3.313045200437847"/>
-    <inertia ixx="0.002916" iyy="0.004451" izz="0.002916" ixy="0.0" iyz="0.0" ixz="0.0"/>
+    <mass value="0.3313045200437847"/>
+    <inertia ixx="0.0002916" iyy="0.0004451" izz="0.0002916" ixy="0.0" iyz="0.0" ixz="0.0"/>
   </inertial>
   <visual>
     <origin xyz="-0.069447 0.0151 0.04945" rpy="0 0 0"/>
@@ -133,8 +133,8 @@
 <link name="right_back_wheel_1">
   <inertial>
     <origin xyz="3.2278066333657485e-07 0.025000000067055467 4.163336342344337e-17" rpy="0 0 0"/>
-    <mass value="3.313045200437847"/>
-    <inertia ixx="0.002916" iyy="0.004451" izz="0.002916" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+    <mass value="0.3313045200437847"/>
+    <inertia ixx="0.0002916" iyy="0.0004451" izz="0.0002916" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
   </inertial>
   <visual>
     <origin xyz="-0.221726 -0.2451 0.04945" rpy="0 0 0"/>
@@ -154,8 +154,8 @@
 <link name="right_front_wheel_1">
   <inertial>
     <origin xyz="1.032099458120328e-07 0.025000000223517643 4.163336342344337e-17" rpy="0 0 0"/>
-    <mass value="3.313045200437847"/>
-    <inertia ixx="0.002916" iyy="0.004451" izz="0.002916" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+    <mass value="0.3313045200437847"/>
+    <inertia ixx="0.0002916" iyy="0.0004451" izz="0.0002916" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
   </inertial>
   <visual>
     <origin xyz="0.080553 -0.2446 0.04945" rpy="0 0 0"/>
@@ -175,8 +175,8 @@
 <link name="left_back_wheel_1">
   <inertial>
     <origin xyz="3.2278066333657485e-07 -0.02500000006705523 4.85722573273506e-17" rpy="0 0 0"/>
-    <mass value="3.313045200437847"/>
-    <inertia ixx="0.002916" iyy="0.004451" izz="0.002916" ixy="0.0" iyz="0.0" ixz="0.0"/>
+    <mass value="0.3313045200437847"/>
+    <inertia ixx="0.0002916" iyy="0.0004451" izz="0.0002916" ixy="0.0" iyz="0.0" ixz="0.0"/>
   </inertial>
   <visual>
     <origin xyz="-0.221726 0.0151 0.04945" rpy="0 0 0"/>
@@ -196,8 +196,8 @@
 <link name="left_front_wheel_1">
   <inertial>
     <origin xyz="1.0320994583978838e-07 -0.025000000223517435 4.163336342344337e-17" rpy="0 0 0"/>
-    <mass value="3.313045200437847"/>
-    <inertia ixx="0.002916" iyy="0.004451" izz="0.002916" ixy="0.0" iyz="0.0" ixz="0.0"/>
+    <mass value="0.3313045200437847"/>
+    <inertia ixx="0.0002916" iyy="0.0004451" izz="0.0002916" ixy="0.0" iyz="0.0" ixz="0.0"/>
   </inertial>
   <visual>
     <origin xyz="0.080553 0.0146 0.04945" rpy="0 0 0"/>
@@ -365,14 +365,16 @@
   <origin xyz="0.0229 0.0075 -0.045" rpy="0 0 0"/>
   <parent link="motor_house_right_mid_1"/>
   <child link="right_mid_wheel_1"/>
-  <axis xyz="-0.0 1.0 0.0"/>
+  <axis xyz="-0.0 -1.0 0.0"/>
+  <limit effort="10.0" velocity="20.0"/>
 </joint>
 
 <joint name="left_mid_wheel" type="continuous">
   <origin xyz="-0.0231 -0.0075 -0.045" rpy="0 0 0"/>
   <parent link="motor_house_left_mid_1"/>
   <child link="left_mid_wheel_1"/>
-  <axis xyz="-0.0 1.0 0.0"/>
+  <axis xyz="-0.0 -1.0 0.0"/>
+  <limit effort="10.0" velocity="20.0"/>
 </joint>
 
 <joint name="left_rocker_bogie" type="revolute">
@@ -381,6 +383,7 @@
   <child link="BogieArm_left_1"/>
   <axis xyz="-0.0 1.0 0.0"/>
   <limit upper="0.872665" lower="-0.436332" effort="100" velocity="100"/>
+  <dynamics damping="0.1" friction="0.5"/>
 </joint>
 
 <joint name="Rigid 58" type="fixed">
@@ -395,34 +398,39 @@
   <child link="BogieArm_right_1"/>
   <axis xyz="-0.0 1.0 0.0"/>
   <limit upper="0.872665" lower="-0.436332" effort="100" velocity="100"/>
+  <dynamics damping="0.1" friction="0.5"/>
 </joint>
 
 <joint name="right_back_wheel" type="continuous">
   <origin xyz="-0.010553 ${0.2501-0.2392} -0.04845" rpy="0 0 0"/>
   <parent link="motor_house_right_back_2"/>
   <child link="right_back_wheel_1"/>
-  <axis xyz="0.0 1.0 0.0"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+  <limit effort="10.0" velocity="20.0"/>
 </joint>
 
 <joint name="right_front_wheel" type="continuous">
   <origin xyz="-0.010553 ${0.2341-0.2392} -0.04845" rpy="0 0 0"/>
   <parent link="motor_house_right_front_1"/>
   <child link="right_front_wheel_1"/>
-  <axis xyz="0.0 1.0 0.0"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+  <limit effort="10.0" velocity="20.0"/>
 </joint>
 
 <joint name="left_back_wheel" type="continuous">
   <origin xyz="-0.010553 -0.0099 -0.05045" rpy="0 0 0"/>
   <parent link="motor_house_left_back_1"/>
   <child link="left_back_wheel_1"/>
-  <axis xyz="-0.0 1.0 -0.0"/>
+  <axis xyz="-0.0 -1.0 -0.0"/>
+  <limit effort="10.0" velocity="20.0"/>
 </joint>
 
 <joint name="left_front_wheel" type="continuous">
   <origin xyz="-0.010553 0.0051 -0.05045" rpy="0 0 0"/>
   <parent link="motor_house_left_front_1"/>
   <child link="left_front_wheel_1"/>
-  <axis xyz="-0.0 1.0 -0.0"/>
+  <axis xyz="-0.0 -1.0 -0.0"/>
+  <limit effort="10.0" velocity="20.0"/>
 </joint>
 
 <joint name="Rigid 67" type="fixed">
@@ -469,6 +477,7 @@
   <child link="RockerArm_left_1"/>
   <axis xyz="0.0 -1.0 0.0"/>
   <limit upper="0.349066" lower="-0.349066" effort="100" velocity="100"/>
+  <dynamics damping="0.1" friction="0.5"/>
 </joint>
 
 <joint name="right_rocker_arm" type="revolute">
@@ -477,6 +486,56 @@
   <child link="RockerArm_right_1"/>
   <axis xyz="0.0 1.0 0.0"/>
   <limit upper="0.349066" lower="-0.349066" effort="100" velocity="100"/>
+  <dynamics damping="0.1" friction="0.5"/>
+  <mimic joint="left_rocker_arm" multiplier="1" offset="0"/>
+</joint>
+
+<link name="lidar_link">
+  <inertial>
+    <mass value="0.11"/>
+    <inertia ixx="1e-5" iyy="1e-5" izz="1e-5" ixy="0" iyz="0" ixz="0"/>
+  </inertial>
+  <visual>
+    <geometry>
+      <cylinder radius="0.0278" length="0.0413"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <geometry>
+      <cylinder radius="0.0278" length="0.0413"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="lidar_joint" type="fixed">
+  <origin xyz="-0.0102 0.115 0.18" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="lidar_link"/>
+</joint>
+
+<link name="lidar_link_tilt">
+  <inertial>
+    <mass value="0.11"/>
+    <inertia ixx="1e-5" iyy="1e-5" izz="1e-5" ixy="0" iyz="0" ixz="0"/>
+  </inertial>
+  <visual>
+    <geometry>
+      <cylinder radius="0.0278" length="0.0413"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <geometry>
+      <cylinder radius="0.0278" length="0.0413"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="lidar_joint_tilt" type="fixed">
+  <origin xyz="-0.08 0.115 0.12" rpy="0 -0.6109 0"/>
+  <parent link="base_link"/>
+  <child link="lidar_link_tilt"/>
 </joint>
 
 </robot>

@@ -16,6 +16,7 @@ setup(
         (os.path.join('share', package_name, 'urdf'), glob('urdf/*')),
         (os.path.join('share', package_name, 'meshes'), glob('meshes/*')),
         (os.path.join('share', package_name, 'config'), glob('config/*')),
+        (os.path.join('share', package_name, 'forros_description'), glob('forros_description/*')),
         (os.path.join('share', package_name, 'worlds'), glob('worlds/*'))
     ],
     install_requires=['setuptools'],
@@ -24,10 +25,13 @@ setup(
     maintainer_email='todo@todo.com',
     description='The ' + package_name + ' package',
     license='TODO: License declaration',
-    tests_require=['pytest'],
+    #tests_require=['pytest'],
     entry_points={
         'console_scripts': [
             'cmd_vel_to_rover = forros_description.cmd_vel_to_rover:main',
+            'true_kinematics = forros_description.true_kinematics_rover:main',
+            'scan_filter = forros_description.scan_filter:main',
+            'traversability_check = forros_description.traversability_check:main',
         ],
     },
 )
