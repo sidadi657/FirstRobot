@@ -29,7 +29,9 @@ setup(
     entry_points={
         'console_scripts': [
             'cmd_vel_to_rover = forros_description.cmd_vel_to_rover:main',
-            'local_relief_filter = forros_description.local_relief_filter:main',
+            'true_kinematics = forros_description.true_kinematics_rover:main',
+            'scan_filter = forros_description.scan_filter:main',
+            'traversability_check = forros_description.traversability_check:main',
         ],
     },
 )
