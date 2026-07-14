@@ -97,10 +97,21 @@ def generate_launch_description():
         ]
     )
 
+    config_dir = os.path.join(get_package_share_directory('forros_description'), 'config')
+
+    twist_mux_node = Node(
+        package='twist_mux',
+        executable='twist_mux',
+        output='screen',
+        remappings=[('/cmd_vel_out', '/cmd_vel')],
+        parameters=[os.path.join(config_dir, 'twist_mux.yaml')]
+    )
+
     return LaunchDescription([
         node_robot_state_publisher,
         gazebo_launch,
         spawn_entity,
         bridge,
         delayed_controllers,
+        twist_mux_node,
     ])
